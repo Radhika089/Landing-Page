@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+/* * {
+  background-color: black;
+  color: white;
+} */
+body {
+  background-color: black;
+  color: white;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+@media (min-width: 1024px) {
+  .container {
+    padding: 80px;
+  }
+}
+@keyframes moveBackground {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 1000px;
+  }
+}
+
+.animate-moveBackground {
+  animation: moveBackground 120s linear infinite;
+}
