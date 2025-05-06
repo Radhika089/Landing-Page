@@ -1,23 +1,29 @@
 import React from "react";
-import Header from "./section/Header";
-import Hero from "./section/Hero";
-import BrandLogos from "./section/BrandLogos";
+import Home from "./Home";
+import { Route, Routes } from "react-router-dom";
+import ChangeLog from "./Pages/ChangeLog";
+import Blogs from "./Pages/Blogs";
+import Developers from "./Pages/Developers";
+import Pricing from "./Pages/Pricing";
 import Features from "./section/Features";
-import Testimonial from "./section/Testimonial";
-import CallToAction from "./section/CallToAction";
-import Footer from "./section/Footer";
+import Contact from "./Pages/Contact";
+import Header from "./section/Header";
+import BlogPost from "./Pages/BlogPost";
 
 const App = () => {
   return (
-    <>
+    <div>
       <Header />
-      <Hero />
-      <BrandLogos />
-      <Features />
-      <Testimonial />
-      <CallToAction />
-      <Footer />
-    </>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/blog/:id" element={<BlogPost />} />
+        <Route path="/contact" element={<Contact />}></Route>
+        <Route path="/changelog" element={<ChangeLog />}></Route>
+        <Route path="/blogs" element={<Blogs />}></Route>
+        <Route path="/developer" element={<Developers />}></Route>
+        <Route path="/pricing" element={<Pricing />}></Route>
+      </Routes>
+    </div>
   );
 };
 

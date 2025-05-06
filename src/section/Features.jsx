@@ -131,7 +131,7 @@ const Features = () => {
     );
   };
   return (
-    <section className="py-20 md:py-24">
+    <section className="py-20 md:py-24" id="features">
       <div className="container">
         <h1 className="text-5xl md:text-6xl text-center font-medium tracking-tighter">
           Elevate your SEO efforts.

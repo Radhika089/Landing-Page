@@ -16,10 +16,10 @@ const Footer = () => {
           </div>
 
           <nav className="flex gap-6 text-white/70 text-md flex-col lg:flex-row lg:gap-8 lg:flex-1 lg:justify-center">
-            <Link to="/features" className="hover:text-white transition">
+            <a href="#features" className="hover:text-white transition">
               Features
-            </Link>
-            <Link to="/developers" className="hover:text-white transition">
+            </a>
+            <Link to="/developer" className="hover:text-white transition">
               Developers
             </Link>
             <Link to="/blogs" className="hover:text-white transition">

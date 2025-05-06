@@ -48,8 +48,8 @@ const Testimonial = () => {
             animate={{ x: ["-50%", "0%"] }}
             transition={{
               repeat: Infinity,
-              duration: 30,
-              ease: "linear",
+              duration: 20,
+              ease: "easeInOut",
             }}
             className="flex gap-5 flex-none pr-5"
           >
